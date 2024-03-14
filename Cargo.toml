@@ -2,7 +2,10 @@
 members = ["programs/*", "programs/invariant/invariant-types"]
 [profile.test]
 overflow-checks = false
-
+# Each handler has to be specified as [[bin]]
+[[bin]]
+name = "handler"
+path = "api/handler.rs"
 # [profile.release]
 # lto = "fat"
 # codegen-units = 1
